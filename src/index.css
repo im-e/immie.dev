@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color:rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+div.top {
+    background-color: #00000085;
+    padding: 0vh 0.5em;
+    z-index: 10;
+    }
+
+    div.header
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        }    
+            div.header-title
+            {
+                display: flex;
+                justify-content: center;
+                }
+
+                    div.header-title img{
+                        height: fit-content;
+                        margin: 2px;
+                        max-height: 2.25em;
+                    }
+                
+                    div.header-title a {
+                        width: 100%;
+                        color: white;
+                        margin: 0vh 0vw;
+                        text-align: center;
+                    }
+
+                    div.header-title h1 {
+                        color: white;
+                        justify-content: center;
+                        font-family: 'Bitter', serif;
+                        font-style: italic;
+                        font-size: 1em;
+                        font-weight: 300;
+                        text-align: center;
+                    }
+
+                    div.header-title a:link {
+                        text-decoration: none;
+                    }
+    
+                    div.header-title a:visited {
+                        text-decoration: none;
+                    }
+                    
+                    div.header-title a:active {
+                        text-decoration: underline;
+                    }
+
+            div.header-links
+            {
+                display: flex;
+                justify-content: space-between;
+                margin: 0vh 0vw;
+                padding: 0px 0px;
+            }   
+
+                div.header-links a {
+                    color: white;
+                    margin: 0vh 2vw;
+                }
+
+                div.header-links p {
+                    color: white;
+                    justify-content: center;
+                    font-size: 0.75em;
+                    font-weight: 200;
+                }
+            
+                div.header-links a:link {
+                    text-decoration: none;
+                }
+
+                div.header-links a:visited {
+                    text-decoration: none;
+                }
+                
+                div.header-links a:active {
+                    text-decoration: underline;
+                }
+div.showcase {
+    width: 100%;
+    height: 100vh;
+    margin-top: -2.5em;
+    align-items: center;
+    background-color:#00000085;
+    z-index: 2;
+    }
+        div.showcase video {
+            width: 100%;
+            height: 100vh; 
+            object-fit: cover;   
+        }
+        
+        div.showcase-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; 
+            background: rgba(0, 0, 0, 0.507);
+            mix-blend-mode: overlay;
+        }
+
+        div.showcase-title {
+            position: absolute;
+            display: flex;
+            left: 4vh;
+            top: 35vh;
+            width: 40vw;
+            
+            padding: 0.5em 0.75em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.205) ;
+
+            justify-content: left;
+            }
+            
+            @media screen and (min-width: 600px) {
+                div.showcase-title {
+                    width: 25vw;
+                }
+            }
+
+            @media screen and (min-width: 1280px) {
+                div.showcase-title {
+                    width: 12vw;
+                }
+            }
+
+            @media screen and (min-width: 1800px) {
+                div.showcase-title {
+                    width: 9vw;
+                }
+            }
+
+            
+            div.showcase-title p {
+                margin: 0;
+                margin-right: 0.3em;
+                padding-top: 0.2em;
+                color: white;
+                font-size: 1em;
+                font-weight: 300;
+            }
+            
+            div.showcase-title h1 {
+                margin: 0;
+                font-family: 'Bitter', serif;
+                font-size: 1.3em;
+                font-weight: 00;
+                color: white;
+                text-align: left;
+            }
+
+        div.showcase-desc {
+            position: absolute;
+            left: 4vh;
+            top: 42.5vh;
+            width: 70vw;
+            
+            padding: 0.5em 0.75em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.205) ;
+            justify-content: center;
+            }
+            
+            @media screen and (min-width: 600px) {
+                div.showcase-desc {
+                    width: 50vw;
+                }
+            }
+
+            @media screen and (min-width: 1280px) {
+                div.showcase-desc {
+                    width: 24vw;
+                }
+            }
+
+            div.showcase-desc p {
+                margin: 0;
+                color: white;
+                font-size: 1em;
+                font-weight: 300;
+                text-align: left;
+            }
+        
+        div.showcase svg {
+            height: 2em;
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+        }
+
+div.split {
+    background-color: rgb(65, 65, 65);
+    color: white;
+    }
+
+    div.split h3 {
+        margin: 0.5em 0.25em;
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+    div.split p{
+        margin: 0.5em 0.5em;
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+
+    div.split-container {
+        background-color: rgb(65, 65, 65);
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        padding: .75em 0.2em;
+        }
+
+        div.split-container a
+        {   
+            display: flex;
+            justify-content: space-evenly;
+
+            margin: 0px 5px;
+            width: 100%;
+            height: 15vh;
+            
+            background-color: black;
+            border: 1px solid white;
+
+        }
+
+        div.split-container video
+        {
+            width: 100%; 
+        }
+        
+        div.split-container p
+        {
+            margin: 0;
+            padding: 16px 0px;
+            color: white;
+            align-self: center;
+            font-size: 1.4em;
+            font-weight: 300;
+            font-family: 'Bitter', serif;
+        }
+
+        div.split-container a:link {
+            text-decoration: none;
+        }
+
+        div.split-container a:visited {
+            text-decoration: none;
+        }
+        
+        div.split-container a:active {
+            text-decoration: underline;
+        }
+        
+    div.split-thin {
+        background-color: rgb(65, 65, 65);
+        display: flex;
+        justify-content: space-evenly;
+        padding: .75em 0.2em;
+        padding-top: 0px;
+        }
+
+        div.split-thin a
+        {
+            display: flex;
+            justify-content: center;
+
+            margin: 0px 5px;
+            width: 100%;
+            height: 8vh;
+
+            background-color: rgba(0, 0, 0, 0.76);
+            border: 1px solid white;
+        }
+
+        div.split-thin p
+        {   
+            margin: 0;
+            padding: 8px 0px;
+            align-self: center;
+            color: white;
+            font-size: 1.4em;
+            font-weight: 300;
+            font-family: 'Bitter', serif;
+        }
+
+        div.split-thin a:link {
+            text-decoration: none;
+        }
+
+        div.split-thin a:visited {
+            text-decoration: none;
+        }
+        
+        div.split-thin a:active {
+            text-decoration: underline;
+        }
+
+    
