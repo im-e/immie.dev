@@ -4,6 +4,10 @@
     font-family: 'Source Code Pro', monospace;
 }
 
+html{
+    min-height: 100vh;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -13,7 +17,7 @@ body {
     background-color:rgb(39, 39, 39);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
