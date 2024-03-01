@@ -46,6 +46,11 @@ div.about {
         font-weight: 300;
     }
     
+    div.about h2 {
+        font-size: 1.25em;
+        font-weight: 300;
+    }
+    
     div.about h3{
         margin: 0;
         background-color: rgba(112, 252, 255, 0.44);
