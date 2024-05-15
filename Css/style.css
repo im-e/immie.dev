@@ -402,6 +402,7 @@ img {
 }
 
 .about-description {
+  font-size: 0.85rem;
   text-align: center;
   margin-bottom: var(--margin-bottom-0-2-5);
 }
@@ -1046,12 +1047,12 @@ img {
   }
 
   .about-container {
-    column-gap: 5rem;
+    column-gap: 0rem;
   }
 
   .about-img {
-    padding-top: 1rem;
-    width: 500px;
+    padding-top: 2rem;
+    width: 600px;
   }
 
   .about-description {
