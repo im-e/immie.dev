@@ -1,130 +1,838 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="icon" href="src/images/favicon.ico">
-      <link rel="stylesheet" href="src/index.css" />  
-      <title>immie.co</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>immie's site! </title>
+    <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
+    <link rel="icon" href="Assets/Icons/favicon.ico"  />
+    <link rel="stylesheet" href="Css/style.css" />
   </head>
+  <body>
+    <!-- header  -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">immie.dev</a>
 
-    <div class="about">
-      <div class="header">
-        <h1>im-e</h1>
-        <img src="src/images/near-noah.png"></img>
-      </div>
-     
-      <p>
-        hello world! My name is imogen, but most people call me immie! <br>
-        i'm an enthusiastic programmer, video editor, cook, gamer, and musician based within the midlands, uk.<br> 
-        <br>
-        welcome to my digital portfolio. <br>
-        workplace details and locations have redacted for privacy reasons. if you want my cv or more information, please contact me at: immie@riseup.net 
-      </p>
-      <h2>introduction</h2>
-      <p>
-        i've always had videogames as my main passion since i was young, and always knew i wanted to work within the gaming sphere.
-        sharing a passion between playing and wanting to make games, i've been heavily interested in competitive titles and development, expanding my skills in both as i've grown up.<br>
-        <br>
-        i love learning new skills and being a creative. i have a wide breadth of interests and hobbies outside of gaming such as video editing, music, food, and languages that i like to explore and develop. 
-        i like to combine them together in unique ways, such as creating audio-visual art, or learning to cook foods and drinks from different countries and cultures. <br>
-        <br>
-        a few short facts: my favourite game is sound voltex! i am an active learner of japanese and my favourite food is nduja pasta! 
-      </p>
-    </div> 
-    
-    <div class="experience">
-      <h3>notable projects</h3>
-      <div class="exp-group">
-        <h4>bloodthirst - c#, unity (ludum dare 51 game jam entry)</h4>
-        <p>
-          bloodthirst is an old school fps doom-like game that was created entirely on my own in 48 hours for the ludum dare 51 game jam based upon the theme 'every 10 seconds'.
-          every asset and piece of code was made entirely from scratch and by myself within those 48 hours. it was ranked in the top 300 of 2450 entries, and ranked in the top 100 for 'mood'.<br>
-          <br>
-
-          in bloodthirst, you must reach the end of the level before succumbing to blood loss which takes 10 seconds, killing an enemy will refill your supply reset the timer. 
-          your health, and ammo also depend on your blood supply, so every action is critical, and every second is too. a missed shot, or bullet taken can be the factor between death or success.<br> 
-          <br>
-          it has an advanced first person character controller and movement system, shooting and melee mechanic, ai enemies with projectile bullets, 
-          'fuel and life' blood system, introduction and game end screen, level summary screen and shader effects.<br>
-          you can play it in your browser on my itch page: <a href="https://nearnoah.itch.io/bloodthirst">https://nearnoah.itch.io/bloodthirst</a>
-        </p>
-        <br>
-        <h4>rave Beat - c#, unity</h4>
-        <p>
-          rave Beat is a rhythm game with acessiblity focused design, that still challenges and trains the rhythmical ability of the player.<br>
-          it was developed independently by myself for my final year project in my third year of university. <br>
-          <br>
-          i conducted resarch and wrote a paper alongside the design process and development of the game, 
-          i looked at how rhythm games can improve ones rhythmical skill, and how rhythmical skills can improve ones health and learning abilities in the real world.
-          my paper also looked into the design of rhythm games, critiquing the downsides they had in terms of accessibility and how many have unfocused design around rhythm timing.
-          i used my resarch to design rave beat to be playable to all, while ensuring the gameplay was focused around rhythmical ability.<br> 
-          <br>
-          it has a precise timing and real-time feedback system
-          The game is fully implemented and functional with a main menu, in-game UI, ranking and records system, alternate gameplay mode, and saving.  
-          you can find the code, and my paper on the github repo: <a href="https://github.com/im-e/rave-beat">https://github.com/im-e/rave-beat</a>
-        </p>
-        <br>
-        <h4>game engine architecture - c++, opengl, glfw, fmod, imgui</h4>
-        <p>
-          i created a game engine in c++, focusing on abrstaction oriented design to allow other apis/libraries to be implemented. 
-          features of the engine include: basic rendering, shaders, textures, 
-          asset and resource manager, logger, window system, input polling, mouse and keyboard events, wirst person camera controller and a 3d positional audio system using fmod.
-        </p>
-        <br>
-        <h4>minecraft server plugins - java</h4>
-        <p>
-          i have made several plugins for minecraft using spigot, paper apis. for my own hosted severs, friends and even commissioned to make a plugin for another server owner.
-          some of these inculde: hardore server plugins, using timed bans upon deaths with included grace periods. server rankings, permission plugins, house area allocation plugins.
-        </p>
-      </div>
-    </div>
-    
-    <div class="experience">
-        <h3>work experience</h3>
-        <div class="exp-group">
-            <h4>front of House barista and junior cook - 05/2023 → current</h4>
-            <p>
-                i am currently a barista and junior cook at a popular independent café in my city, where i interact with, and serve customers coffee with high quality latte art.
-                <br>additionally, i work as a junior cook/baker working in the kitchen for lunch service, as the sous chef for weekend specials and bake high quality cakes and treats throughout the week. 
-                <br>i am a keyholder, who is trusted to open and close the shopfront, along with cashing up the till and securing the premises. 
-            </p>
-            <br>
-            <h4>college tutor - 12/2022 → 04/2023</h4>
-            <p>
-                i was a game development and game art skills tutor at a L2 & L3 btec Level.
-                <br>i would create lesson plans, present and teach the curriculum, assess and monitor students. 
-                <br>lessons revolved around programming and game design, modelling in blender, animation techniques and more game development skills.
-            </p>
-            <br>
-            <h4>apex legends team captain, full time streamer - 06/2021 → 12/2021</h4>
-            <p>
-                i was contracted to be the captain of a semi-pro apex legends team as a player and streamer.
-                <br>i was responsible for managing and leading my teams in-game decisions, organising and scheduling meetings for the team, streaming daily on twitch, participating in tournaments and improving my own gameplay.
-                <br>along with helping and coaching teaching my teammates, i also held weekly mechanics development workshops for other teams across the organisation.
-            </p>
-            <br>
-            <h4>control system install assistant - 03/2018 → 03/2018</h4>
-            <p>
-                i was contracted for two weeks in assisting the installation of a control system for an asphalt plant.
-                <br>i was tasked to deconstruct an old an quarry control system, which involved dissassembly of the old panel, contstruction and installation of the new panel, alongside the computer that controls it.
-                <br>responsibilities included: panel deconstruction, networking setup for the new control system and cable numbering as per specification. 
-            </p>
-            <br>
-            <h4>computer repair technician & sales assistant - 08/2015 → 01/2016</h4>
-            <p>
-                i was a repair technician and trusted sales assistant at a computer repair shop.
-                <br>while working i was responsible for carrying out full repairs, maintenance, etc on all types of electronic devices ranging from computers, laptops to mobile phones. 
-                <br>i was also responsible for working the till, handling purchases and maintaining the storefront.
-            </p>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="#home" class="nav-link"
+                ><i class="fa-solid fa-house nav-icon"></i> home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link"
+                ><i class="fa-solid fa-user nav-icon"></i> about</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link"
+                ><i class="fa-solid fa-file nav-icon"></i> skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link"
+                ><i class="fa-solid fa-briefcase nav-icon"></i> services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link"
+                ><i class="fa-solid fa-image nav-icon"></i> projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"
+                ><i class="fa-solid fa-message nav-icon"></i> contact</a
+              >
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
         </div>
-    </div>
 
+        <div class="nav-btns">
+          <!-- theme btn  -->
+          <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
 
-  </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <script src="src/app.js"></script>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home-container container grid">
+          <div class="home-content grid">
+            <div class="home-social">
+              <a
+                href="https://github.com/im-e"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
 
+            <div class="home-img">
+              <svg
+                class="home-blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home-blob-img"
+                    x="-15"
+                    y="-5"
+                    href="Assets/Icons/sparkle-splash.webp"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="home-data">
+              <h1 class="home-title">hi, i'm imogen</h1>
+              <h3 class="home-subtitle">software developer</h3>
+              <p class="home-description">
+                passionate software developer, with an interest in games, audio and data.
+              </p>
+              <a href="#contact" class="button button-flex">
+                contact me <i class="fa-regular fa-envelope button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <h2 class="section-title">about me</h2>
+        <span class="section-subtitle">an introduction</span>
+
+        <div class="about-container container grid">
+          <img src="Assets/Icons/Sparkle_cutout.webp" alt="" class="about-img" />
+
+          <div class="about-data">
+            <p class="about-description">
+              my name is imogen, but most people call me immie! 
+              <br> <br>
+
+              having a passion in both playing and creating games, i've been expanding my skills in both as i've grown up. 
+              which has lead me down the path of development for games, software and websites (like this one!).
+              <br> <br>
+
+              outside of gaming, i love learning new skills and being a creative.
+              other hobbies of mine like video editing, music, food, and languages are all things that i like to explore and develop in my free time. <br>
+              i like to combine them together in unique ways, such as creating audio-visual art, or learning to cook foods from different countries and cultures.
+              
+              <br> <br>
+              a few short facts about me: my favourite game is sound voltex! i am an active learner of japanese and my favourite food is nduja pasta! 
+              <br><br>
+              workplace details and locations have redacted for privacy reasons. 
+              if you want my resume with this information, please contact me at: immie@riseup.net  
+            </p>
+
+            <div class="about-info">
+              <div>
+                <span class="about-info-title">5+</span>
+                <span class="about-info-name"
+                  >years <br/>
+                  development
+                  <br>
+                  experience</span
+                >
+              </div>
+              <div>
+                <span class="about-info-title">20+</span>
+                <span class="about-info-name"
+                  >finished <br/>
+                  projects</span
+                >
+              </div>
+              <div>
+                <span class="about-info-title">12+</span>
+                <span class="about-info-name"
+                  >strong <br/>
+                  technical<br>
+                  skills</span
+                >
+              </div>
+            </div>
+
+            <div class="about-buttons">
+              <a
+                download=""
+                href="/Assets/Resume.pdf"
+                class="button button-flex"
+              >
+              get resume
+              <i
+                  class="fa-solid fa-file-arrow-down button-icon"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills and qualification  -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">skills</h2>
+        <span class="section-subtitle">my technical skills</span>
+        <div class="skills-content container">
+          <div class="skills-name">c++</div>
+          <div class="skills-name">c#</div>
+          <div class="skills-name">java</div>
+          <div class="skills-name">html</div>
+          <div class="skills-name">css</div>
+          <div class="skills-name">git</div>
+          <div class="skills-name">spring</div>
+          <div class="skills-name">glsl</div>
+          <div class="skills-name">unity</div>
+          <div class="skills-name">fmod</div>
+          <div class="skills-name">after effects</div>
+          <div class="skills-name">premiere</div>
+        </div>
+      </section>
+      <section class="qualification section">
+        <h2 class="section-title">qualifications</h2>
+        <span class="section-subtitle">my journey</span>
+
+        <div class="qualification-container container">
+          <div class="qualification-tabs">
+            <div
+              class="qualification-button button-flex qualification-active"
+              data-target="#education"
+            >
+              <i class="fa-solid fa-graduation-cap qualification-icon"></i>
+              education
+            </div>
+            <div class="qualification-button button-flex" data-target="#work">
+              <i class="fa-solid fa-briefcase qualification-icon"></i>
+              work
+            </div>
+          </div>
+          <!-- qualifi education -->
+          <div class="qualification-section">
+            <div
+              class="qualification-content qualification-active"
+              data-content
+              id="education"
+            >
+              <!-- qualifi 1 -->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">
+                    computer games programming (bsc)
+                  </h3>
+                  <span class="qualification-subtitle">first class honors</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2017 -> 2020
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 2 -->
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">
+                    computing (ext. diploma) 
+                  </h3>
+                  <span class="qualification-subtitle">ddm</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2015 -> 2017
+                  </div>
+                </div>
+              </div>
+
+              <!-- qualifi 3 -->
+              <div class="qualification-data">
+              
+                <div>
+                  <h3 class="qualification-title">secondary school</h3>
+                  <span class="qualification-subtitle">A* - 4, A - 5</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2009 -> 2015
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                </div>
+              </div>
+            
+            </div>
+
+            <!-- quali work  -->
+            <div class="qualification-content" data-content id="work">
+              
+              <!-- qualifi 1 -->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">java developer</h3>
+                  <span class="qualification-subtitle">hire, train, deploy agency</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2024 -> present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 2 -->
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">barista and junior chef</h3>
+                  <span class="qualification-subtitle">independent cafe</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2023 -> 2024
+                  </div>
+                </div>
+              </div>
+
+              <!-- qualifi 3 -->
+              <div class="qualification-data">
+              
+                <div>
+                  <h3 class="qualification-title">college tutor</h3>
+                  <span class="qualification-subtitle">games art & development</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2022 -> 2023
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 4 -->
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">apex legends player & streamer</h3>
+                  <span class="qualification-subtitle">professional ingame leader</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021 -> 2022
+                  </div>
+                </div>
+              </div>
+
+              <!-- qualifi 5 -->
+              <div class="qualification-data">
+              
+                <div>
+                  <h3 class="qualification-title">control system installer</h3>
+                  <span class="qualification-subtitle">assistant quarry control sys engineer</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2018 - 2 week contract
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 6 -->
+              <div class="qualification-data">
+                <div></div>
+                <div>
+                  <span class="qualification-round"></span>
+                </div>
+                <div>
+                  <h3 class="qualification-title">computer repair technician</h3>
+                  <span class="qualification-subtitle">computer and mobile repair shop</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2015 -> 2016
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <h2 class="section-title">services</h2>
+        <span class="section-subtitle">my talents</span>
+
+        <div class="services-container container grid">
+          <!-- service 1  -->
+          <div class="services-content">
+            <div>
+              <i class="fa-solid fa-code services-icon"></i>
+
+              <h3 class="services-title">
+                game <br />
+                development
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              view more
+              <i class="fa-solid fa-arrow-right button-icon"></i>
+            </span>
+
+            <div class="services-box">
+              <div class="services-box-content">
+                <h4 class="services-box-title">
+                  game <br />
+                  development
+                </h4>
+                <i class="fa-solid fa-xmark services-box-close"></i>
+
+                <ul class="services-box-services grid">
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>c++ proficiency, opengl, sfml, fmod</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>game engine experience, unity, ue4, godot</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>first class degree in computer games programming</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>experienced working in scrum and agile, oop and solid principle trained</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- service 2  -->
+          <div class="services-content">
+            <div>
+              <i class="fa-brands fa-uikit services-icon"></i>
+              <h3 class="services-title">
+                software <br />
+                development
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              view more
+              <i class="fa-solid fa-arrow-right button-icon"></i>
+            </span>
+
+            <div class="services-box">
+              <div class="services-box-content">
+                <h4 class="services-box-title">
+                  software <br />
+                  development
+                </h4>
+                <i class="fa-solid fa-xmark services-box-close"></i>
+
+                <ul class="services-box-services grid">
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>java software development, spring, sql</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>frontend development, html, css, js</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>c# proficiency, .net, networking</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>experienced working in scrum and agile, oop and solid principle trained</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- service 3  -->
+          <div class="services-content">
+            <div>
+              <i class="fa-solid fa-hashtag services-icon"></i>
+              <h3 class="services-title">
+                video<br />
+                editing
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              view more
+              <i class="fa-solid fa-arrow-right button-icon"></i>
+            </span>
+
+            <div class="services-box">
+              <div class="services-box-content">
+                <h4 class="services-box-title">
+                  content <br />
+                  creation
+                </h4>
+                <i class="fa-solid fa-xmark services-box-close"></i>
+
+                <ul class="services-box-services grid">
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>engaging audio-visual content creator</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>adobe after effects, premiere, da vinci resolve</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>obs mastery and video quality enthusiast</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>twitch streamer and video creator</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">projects</h2>
+        <span class="section-subtitle">most recent work</span>
+
+        <div class="portfolio-container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- project1  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/ravebeat.png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">rave beat</h3>
+                <p class="portfolio-description">
+                  an acessibility focused rhythm game, with a precise timing system.
+                </p>
+                <a
+                  href="https://github.com/im-e/rave-beat"
+                  target="_blank"
+                  class="button button-flex button-small portfolio-button"
+                  >project link
+                  <i class="fa-solid fa-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- project2  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/engine.png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">game engine architecture</h3>
+                <p class="portfolio-description">
+                  abstract design game engine in c++, focusing on object oriented and abstracted design to allow other apis/libraries to be implemented.  
+                </p>
+                <a
+                  href="https://github.com/im-e/game-engine-architecture"
+                  target="_blank"
+                  class="button button-flex button-small portfolio-button"
+                  >project link
+                  <i class="fa-solid fa-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- project3  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/soulflame.png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">soulflame</h3>
+                <p class="portfolio-description">
+                  soulflame is a fast paced, pixel platformer with tight controls. made with unity.
+                </p>
+                <a
+                  href="https://github.com/im-e/soulflame"
+                  target="_blank"
+                  class="button button-flex button-small portfolio-button"
+                  >project link
+                  <i class="fa-solid fa-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/employeedao.png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">employee searcher</h3>
+                <p class="portfolio-description">
+                  an employee searching dao with crud functionality, populates a mysql database from a csv file and provides the user an interface to interact with the data.
+                </p>
+                <a
+                  href="https://github.com/im-e/employee-sql-dao"
+                  target="_blank"
+                  class="button button-flex button-small portfolio-button"
+                  >project link
+                  <i class="fa-solid fa-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-angles">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-angle-right swiper-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-angle-left swiper-icon"></i>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Project Contact-->
+      <section class="project-contact section">
+        <div class="project-bg">
+          <div class="project-container container grid">
+            <div class="project-data">
+              <h2 class="project-title">need a developer?</h2>
+              <p class="project-description">
+                contact me for details, and further workplace information.
+              </p>
+              <a href="#contact" class="button button-flex button-white"
+                >contact me!
+                <i
+                  class="fa-regular fa-comment-dots project-icon button-icon"
+                ></i>
+              </a>
+            </div>
+            <img src="Assets/Icons/crack-sparkle.webp" alt="" class="contact-img" />
+          </div>
+        </div>
+      </section>
+      <!-- testimonial -->
+      <section class="testimonial section">
+        <h2 class="section-title">testimonials</h2>
+        <span class="section-subtitle">what others say</span>
+
+        <div class="testimonial-container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- testimonial 1  -->
+            <div class="testimonial-content swiper-slide">
+              <div class="testimonial-data">
+                <div class="testimonial-header">
+                  <img
+                    src="Assets/Icons/jethro.jpg"
+                    alt=""
+                    class="testimonial-img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial-name">jethro shell</h3>
+                    <span class="testimonial-client">university lecturer</span>
+                  </div>
+                </div>
+
+              </div>
+              <p class="testimonial-description">
+                while teaching Imogen and being her personal development tutor, she has shown exceptional talent to her passion within game design and development. 
+                she has proven skills using unity, and C#, along with her engine architecture development in c++.
+                her creative approach to problem-solving, and keen eye for accessible design, has led to the development of 
+                innovative design within a genre and engaging game mechanics shown in her final project ravebeat.
+              </p>
+            </div>
+            <!-- testimonial 2 -->
+            <div class="testimonial-content swiper-slide">
+              <div class="testimonial-data">
+                <div class="testimonial-header">
+                  <img
+                    src="Assets/Icons/miriam.jpg"
+                    alt=""
+                    class="testimonial-img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial-name">miriam</h3>
+                    <span class="testimonial-client">cafe manager</span>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-description">
+                imogen was an incredible energy here at the [removed], she has a great attention to detail 
+                along with the reliability to be able to handle diverse responsibilities and challenges thrown her way.
+                she jumped at the oppourtunity to learn from our head chef when we needed a sous for weekend specials and learned the skills at lightning pace.
+                combined with her strong work ethic and joyful attitude, she greatly enhanced the overall experience at our café and a pleasure to work with. 
+              </p>
+            </div>
+            <!-- testimonial  3-->
+            <div class="testimonial-content swiper-slide">
+              <div class="testimonial-data">
+                <div class="testimonial-header">
+                  <img
+                    src="Assets/Icons/adrian.jpg"
+                    alt=""
+                    class="testimonial-img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial-name">adrian sadkowski</h3>
+                    <span class="testimonial-client">team talent manager</span>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-description">
+                immie excelled as the captain of the tap3 development team, showcasing her leadership and and in-game skills. 
+                she fully strategised and led the teams in-game decisions, organized their meetings, 
+                all the while developing our brand status being a beloved personality every day on twitch. 
+                her dedication to improving her gameplay through theorycrafting, doing demo reviews, and watching pros is inspiring.
+                her work ethic, professionalism and dedication to the esport was unlike anything i have seen.
+                she went far beyond her role, coaching her teammates, and holding weekly mechanics development workshops for other teams in the organisation. 
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination swiper-pagination-testimonial"></div>
+        </div>
+      </section>
+
+      <!-- contact me  -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">contact me!</h2>
+        <span class="section-subtitle">get in touch</span>
+        <div class="contact-container container">
+          <div class="contact-info">
+            <i class="fa-regular fa-envelope contact-icon"></i>
+            <div>
+              <h3 class="contact-title">email</h3>
+              <a
+                href="mailto:immie@riseup.net"
+                target="_blank"
+                class="contact-subtitle"
+                >immie@riseup.net</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <footer class="footer">
+        <div class="footer-bg">
+          <div class="footer-container container grid">
+            <div>
+              <h1 class="footer-title">imogen (im-e)</h1>
+              <span class="footer-subtitle">software & games developer</span>
+            </div>
+            <ul class="footer-links">
+              <li>
+                <a href="#services" class="footer-link">services</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="footer-link">portfolio</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer-link">contact</a>
+              </li>
+            </ul>
+
+            <div class="footer-socials">
+              <a
+                href="https://github.com/im-e"
+                target="_blank"
+                target="_blank"
+                class="footer-social"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <p class="footer-copy">by immie :3</p>
+        </div>
+      </footer>
+    </main>
+
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-arrow-up scroll-up-icon"></i>
+    </a>
+    <script src="Libraries/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9b634c15bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
