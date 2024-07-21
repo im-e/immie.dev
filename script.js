@@ -146,7 +146,7 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-//swiper
+//swiper portfolio
 let swiperPortfolio = new Swiper(".portfolio-container", {
   cssMode: true,
   loop: true,
@@ -162,19 +162,18 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
   },
 });
 
+//swiper portfolio
 let swiperTestimonial = new Swiper(".testimonial-container", {
   cssMode: true,
   loop: true,
-  spaceBetween: 48,
+  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-
-  breakpoints: {
-    568: {
-      slidesPerView: 2,
-    },
   },
 });
